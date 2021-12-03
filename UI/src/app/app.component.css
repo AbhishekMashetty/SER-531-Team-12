@@ -5,11 +5,13 @@
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow:auto;
 }
 
 .header {
   text-align: center;
   font-size: 2em;
+  background-color: white;
 }
 
 .form {
@@ -19,7 +21,6 @@
 }
 
 .msg-container {
-  flex-grow: 5;
   display: flex;
   justify-content: center;
 }
