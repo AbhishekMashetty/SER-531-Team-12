@@ -30,27 +30,6 @@ export class AppComponent {
       })
     })
 
-    // this.outputText = JSON.stringify(data.results.bindings[0])
   }
-
-  // loginForm = new FormGroup({
-  //   email: new FormControl('', Validators.required),
-  //   pass: new FormControl('', Validators.required)
-  // });
-
-  // tryLogin() {
-  //   console.log("Logging in...");
-  //   console.log("EMAIL: ",this.loginForm.controls['email'].value);
-  //   console.log("PASSWORD: ",this.loginForm.controls['pass'].value);
-  //   // this.http.get(this.apiURL).subscribe(res=>{console.log(res);});
-  //   this.http.post<any>(this.apiURL, 
-  //   {email: this.loginForm.controls['email'].value, 
-  //   pass:this.loginForm.controls['pass'].value 
-  //   }).subscribe(res=>{
-  // 	  console.log("API RESPONSE: ", res);
-  // 	  this.loginValid = res.result;
-  //   });
-  // }
-
 
 }
