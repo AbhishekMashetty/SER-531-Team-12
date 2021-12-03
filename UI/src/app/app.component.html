@@ -1,0 +1,20 @@
+<div class="header">
+  <h1>SER531 TEAM</h1>
+</div>
+<div class="container">
+
+  <br /><br />
+  <div class="form">
+    <div>
+      <input style="width:100%" type="text" [(ngModel)]="searchText" placeholder="...">
+    </div>
+    <br />
+    <div>
+      <button style="width:100%" (click)="search()">Search</button>
+    </div>
+  </div>
+  <br /><br />
+  <div class="msg-container">
+    <p class="msg">{{outputText}}</p>
+  </div>
+</div>

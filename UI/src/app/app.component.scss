@@ -1,0 +1,20 @@
+.body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;// #8b9474;
+}
+
+.item {
+  flex-grow: 1;
+}
+
+.msg-container {
+  color: black;
+  background-color: white;
+}

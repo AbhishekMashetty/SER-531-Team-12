@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #5e6572; /*EEF1EF    5E6572*/
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  font-size: 2em;
+}
+
+.form {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.msg-container {
+  flex-grow: 5;
+  display: flex;
+  justify-content: center;
+}
+
+.msg {
+  color: white;
+  font-size: 1.5em;
+  white-space: pre-wrap;
+}
