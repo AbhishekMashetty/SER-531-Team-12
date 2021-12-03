@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kalyan/ontologies/2021/10/untitled-ontology-14#"
+     xml:base="http://www.semanticweb.org/kalyan/ontologies/2021/10/untitled-ontology-14"
+     xmlns:law="http://www.semanticweb.org/law#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/law"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/law#definekeywords -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/law#definekeywords"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/law#CombinableProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/law#CombinableProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Properties whose values can be combined to a subject&apos;s instance are sub-properties of this property.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/law#against -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/law#against">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/law#CombinableProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/law#case"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/law#defendant"/>
+        <rdfs:comment>This property is used to know against whom the case has been filed.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/law#filed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/law#filed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/law#plaintiff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/law#case"/>
+        <rdfs:comment>This property is used to know about the relation between plaintiff the case, and what type of case the plaintiff filed.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/law#in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/law#in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/law#case"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/law#courtplace"/>
+        <rdfs:comment>This property is used to know where the case has been filed.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/law#KeywordProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/law#KeywordProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment>Properties that uses keywords are sub-properites of this KeywordProperty property.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/law#allege -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/law#allege">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/law#KeywordProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/law#plaintiff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <law:definekeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alleging that
+allege that
+alleged
+alleges
+allegations for</law:definekeywords>
+        <rdfs:comment>This property is used to get the information about the plaintiffs allegations.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/law#argue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/law#argue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/law#KeywordProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/law#defendant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <law:definekeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">argues that
+said that
+claim that</law:definekeywords>
+        <rdfs:comment>This property is used to know about the arguments from the defendents.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/law#decision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/law#decision">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/law#KeywordProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/law#judge"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <law:definekeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">issued a default judgment
+issued its decision
+issued a judgment, 
+issued a final verdict</law:definekeywords>
+        <rdfs:comment>This property is used to know about the decision by the Judge.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/law#demands -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/law#demands">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/law#KeywordProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/law#plaintiff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <law:definekeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demanding
+request
+seek orders, 
+want</law:definekeywords>
+        <rdfs:comment>This property is used to know the plaintiffs demands.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/law#on -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/law#on">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/law#KeywordProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/law#proceedings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <law:definekeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On
+In</law:definekeywords>
+        <rdfs:comment>This property is used to know when the proceedings had happened.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/law#KeywordClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/law#KeywordClass">
+        <rdfs:comment>Classes that uses keywords are sub-class of this KeywordClass class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/law#SummarizableClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/law#SummarizableClass">
+        <rdfs:comment>Classes which are primarily summarized are sub-classes of this SummarizableClass class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/law#case -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/law#case">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/law#KeywordClass"/>
+        <law:definekeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a lawsuit
+a class action
+a suit
+a criminal case</law:definekeywords>
+        <rdfs:comment>This class is about the cases which are filed, it uses keywords.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/law#courtplace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/law#courtplace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/law#SummarizableClass"/>
+        <rdfs:comment>This class is about the places where the case has been filed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/law#defendant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/law#defendant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/law#SummarizableClass"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/law#plaintiff"/>
+        <rdfs:comment>This class is about the defendents against whom the case has been filed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/law#judge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/law#judge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/law#KeywordClass"/>
+        <law:definekeywords>the court
+Judge
+cheif justice</law:definekeywords>
+        <rdfs:comment>This is the class about the judge and this depends on the keyords.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/law#plaintiff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/law#plaintiff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/law#SummarizableClass"/>
+        <rdfs:comment>This class is about the plaintiff&apos;s who filed the case.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/law#proceedings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/law#proceedings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/law#KeywordClass"/>
+        <law:definekeywords>legal proceedings</law:definekeywords>
+        <rdfs:comment>This class is about the proceedings in the case and uses keywords from the documents to get the information.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/law#case"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/law#judge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/law#proceedings"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
