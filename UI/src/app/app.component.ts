@@ -22,7 +22,14 @@ export class AppComponent {
   search() {
     let outMap = {}
     let inMap = {}
-    this.data.sparql("SELECT * WHERE{ ?s ?p ?o . }").subscribe(res => {
+
+    let query
+    if (this.searchText) {
+      query = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT * WHERE{ ?s rdfs:label ?o . FILTER( regex(?o, \"" + this.searchText + "\", \"i\" ) )  }"
+    } else {
+      query = "SELECT * WHERE{ ?s ?p ?o . }"
+    }
+    this.data.sparql(query).subscribe(res => {
       console.log(res);
 
       this.outputText = ''
@@ -45,9 +52,11 @@ export class AppComponent {
       console.log(inMap)
       console.log(outMap)
       Object.keys(outMap).forEach(x => {
-        this.outputText += x + ' ' + outMap[x].toString() + '\n'
+        this.outputText += '#' + x.split('#')[1] + ' ' + outMap[x].toString() + '\n'
       })
     })
+
+
 
 
   }
