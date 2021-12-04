@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 // import data from 'src/assets/response.json';
@@ -9,7 +9,7 @@ import { DataService } from './services/data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   constructor(private http: HttpClient, private data: DataService) { }
 
@@ -17,6 +17,12 @@ export class AppComponent {
 
   searchText: any;
   outputText: any;
+  select;
+  entities: any[] = [];
+
+  ngOnInit() {
+    this.getEntities();
+  }
 
 
   search() {
@@ -51,14 +57,16 @@ export class AppComponent {
         //   this.outputText += triple.s.value.split('#')[1] + '\n'
         // }
         let txt: String[] = [];
-        ['s', 'p', 'o'].forEach(x => {
-          if (triple[x].type === 'uri') {
-            txt.push("<" + triple[x].value + ">")
-          } else if (triple[x].type === 'literal') {
-            txt.push("\"" + triple[x].value + "\"")
-          }
-        })
-        this.outputText += txt[0] + ' ' + txt[1] + ' ' + txt[2] + ' .\n'
+        if (triple.p.value.split('#')[1] != 'type' && triple.p.value.split('#')[1] != 'label') {
+          ['s', 'p', 'o'].forEach(x => {
+            if (triple[x].type === 'uri') {
+              txt.push("<" + triple[x].value + ">")
+            } else if (triple[x].type === 'literal') {
+              txt.push("\"" + triple[x].value + "\"")
+            }
+          })
+          this.outputText += txt[0] + ' ' + txt[1] + ' ' + txt[2] + ' .\n'
+        }
       })
 
       console.log(inMap)
@@ -68,10 +76,43 @@ export class AppComponent {
       // })
 
     })
+  }
 
+  getEntities() {
+    let query = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX law: <http://www.semanticweb.org/law#> " +
+      "SELECT ?s ?name WHERE{ ?s rdfs:label ?name .  ?s law:filed ?o } "
+    this.data.sparql(query).subscribe(res => {
+      console.log(res);
+      res['results']['bindings'].forEach((triple: any) => {
+        this.entities.push({
+          name: triple.name.value,
+          uri: triple.s.value
+        })
+      });
+    })
+  }
 
-
-
+  getPlaintiff() {
+    this.searchText = this.select.name;
+    this.search();
+    return;
+    let query = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX law: <http://www.semanticweb.org/law#> " +
+      "SELECT ?s ?p ?o WHERE { ?s ?p ?o . " + this.select + " ?p ?o .}"
+    this.data.sparql(query).subscribe(res => {
+      res['results']['bindings'].forEach((triple: any) => {
+        let txt: String[] = [];
+        if (triple.p.value.split('#')[1] != 'type' && triple.p.value.split('#')[1] != 'label') {
+          ['s', 'p', 'o'].forEach(x => {
+            if (triple[x].type === 'uri') {
+              txt.push("<" + triple[x].value + ">")
+            } else if (triple[x].type === 'literal') {
+              txt.push("\"" + triple[x].value + "\"")
+            }
+          })
+          this.outputText += txt[0] + ' ' + txt[1] + ' ' + txt[2] + ' .\n'
+        }
+      });
+    })
   }
 
 }

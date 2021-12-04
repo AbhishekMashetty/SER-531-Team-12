@@ -3,6 +3,12 @@
     <h1>SER531 TEAM 12</h1>
   </div>
   <br /><br />
+  <div>
+    <label>Plaintiffs</label>
+    <select [(ngModel)]="select" (ngModelChange)="getPlaintiff()">
+      <option *ngFor="let e of entities" [ngValue]="e">{{e.name}}</option>
+    </select>
+  </div>
   <div class="form">
     <div>
       <input style="width:100%" type="text" [(ngModel)]="searchText" placeholder="...">

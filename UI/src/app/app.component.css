@@ -17,6 +17,7 @@
 .form {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .msg-container {
