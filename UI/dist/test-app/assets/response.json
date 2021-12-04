@@ -1,0 +1,508 @@
+{ "head": {
+    "vars": [ "s" , "p" , "o" ]
+  } ,
+  "results": {
+    "bindings": [
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Anglo_American_South_Africa_Ltd" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Anglo_American_South_Africa_Ltd" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#demands" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#domain" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#plaintiff" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#demands" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#demands" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#definekeywords" } ,
+        "o": { "type": "literal" , "value": "demanding\nrequest\nseek orders, \nwant" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#demands" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "This property is used to know the plaintiffs demands." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#demands" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#DatatypeProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#demands" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#range" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2001/XMLSchema#string" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordProperty" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#topDataProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordProperty" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "Properties that uses keywords are sub-properites of this KeywordProperty property." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordProperty" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#DatatypeProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#MCC_International_Saipan_Ltd" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "o": { "type": "literal" , "value": "that it supports and strives to comply with all federal and local labor and safety laws and regulations aimed at protecting workers from harm and safeguarding their rights, including expecting our contractors to be compliant with these same laws and regulations" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#MCC_International_Saipan_Ltd" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#MCC_International_Saipan_Ltd" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" }
+      } ,
+      { 
+        "s": { "type": "bnode" , "value": "b0" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" }
+      } ,
+      { 
+        "s": { "type": "bnode" , "value": "b0" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#proceedings" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#IRAdvocates" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#demands" } ,
+        "o": { "type": "literal" , "value": "that the Court order the defendants to create a fund to contribute to the appropriate medical care of the plaintiffs and other unnamed children who were injured while mining cobalt" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#IRAdvocates" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#allege" } ,
+        "o": { "type": "literal" , "value": "the corporations profited from child labour in their cobalt supply chains in the Democratic Republic of Congo" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#IRAdvocates" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#filed" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#IRAdvocates" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#IRAdvocates" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#plaintiff" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Johannesburg_High_Court" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Johannesburg_High_Court" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#courtplace" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#US_District_Court_for_the_District_of_Columbia" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#US_District_Court_for_the_District_of_Columbia" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#courtplace" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#US_District_Court_for_the_District_of_Columbia" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#in" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#US_District_Court_for_the_District_of_Columbia" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Dell" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "o": { "type": "literal" , "value": "that the maimed and dead child miners were not \u201Cforced\u201D into labour which they said only encompasses labour that is compelled by direct threats of force or harm from the employer, and not labour that is compelled by other circumstances, such as economic pressure" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Dell" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Dell" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#SummarizableClass" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "Classes which are primarily summarized are sub-classes of this SummarizableClass class." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#SummarizableClass" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#definekeywords" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#AnnotationProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#CombinableProperty" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#topObjectProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#CombinableProperty" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "Properties whose values can be combined to a subject's instance are sub-properties of this property." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#CombinableProperty" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#ObjectProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Microsoft" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "o": { "type": "literal" , "value": "that the maimed and dead child miners were not \u201Cforced\u201D into labour which they said only encompasses labour that is compelled by direct threats of force or harm from the employer, and not labour that is compelled by other circumstances, such as economic pressure" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Microsoft" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Microsoft" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#domain" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#definekeywords" } ,
+        "o": { "type": "literal" , "value": "argues that\nsaid that\nclaim that" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "This property is used to know about the arguments from the defendents." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#DatatypeProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#range" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2001/XMLSchema#string" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Geneva's_Court" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Geneva's_Court" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#courtplace" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#case" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#in" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#Geneva's_Court" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#against" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#IBM" }
+      } ,
+      { 
+        "s": { "type": "bnode" , "value": "b1" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" } ,
+        "o": { "type": "bnode" , "value": "b0" }
+      } ,
+      { 
+        "s": { "type": "bnode" , "value": "b1" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#judge" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#allege" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#domain" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#plaintiff" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#allege" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#allege" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#definekeywords" } ,
+        "o": { "type": "literal" , "value": "alleging that\nallege that\nalleged\nalleges\nallegations for" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#allege" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "This property is used to get the information about the plaintiffs allegations." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#allege" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#DatatypeProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#allege" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#range" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2001/XMLSchema#string" }
+      } ,
+      { 
+        "s": { "type": "bnode" , "value": "b2" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" } ,
+        "o": { "type": "bnode" , "value": "b1" }
+      } ,
+      { 
+        "s": { "type": "bnode" , "value": "b2" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#case" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Legal_Proceedings" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Legal_Proceedings" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#proceedings" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Legal_Proceedings" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#on" } ,
+        "o": { "type": "literal" , "value": "20 October 2020" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Legal_Proceedings" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#on" } ,
+        "o": { "type": "literal" , "value": "March 2019" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Legal_Proceedings" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#on" } ,
+        "o": { "type": "literal" , "value": "January 2002" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Federal_Court_in_Saipan" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "o": { "type": "literal" , "value": "that it supports and strives to comply with all federal and local labor and safety laws and regulations aimed at protecting workers from harm and safeguarding their rights, including expecting our contractors to be compliant with these same laws and regulations" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Federal_Court_in_Saipan" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Federal_Court_in_Saipan" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#courtplace" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#judge" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#definekeywords" } ,
+        "o": { "type": "literal" , "value": "the court\nJudge\ncheif justice" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#judge" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "This is the class about the judge and this depends on the keyords." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#judge" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordClass" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#judge" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Tesla" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#argue" } ,
+        "o": { "type": "literal" , "value": "that the maimed and dead child miners were not \u201Cforced\u201D into labour which they said only encompasses labour that is compelled by direct threats of force or harm from the employer, and not labour that is compelled by other circumstances, such as economic pressure" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Tesla" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Tesla" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#filed" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#domain" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#plaintiff" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#filed" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#topObjectProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#filed" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "This property is used to know about the relation between plaintiff the case, and what type of case the plaintiff filed." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#filed" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#ObjectProperty" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#filed" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#range" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#case" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Columbia_District_Court" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Columbia_District_Court" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#judge" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#Columbia_District_Court" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#decision" } ,
+        "o": { "type": "literal" , "value": "dismissed the case" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Ontology" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordClass" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "Classes that uses keywords are sub-class of this KeywordClass class." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#KeywordClass" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#NamedIndividual" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#case" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#in" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#US_District_Court_for_the_District_of_Columbia" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#against" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#Dell" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#against" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#Microsoft" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#against" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#Tesla" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#against" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#Alphabet" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#against" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#Google" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#class_action_lawsuit" } ,
+        "p": { "type": "uri" , "value": "http://www.semanticweb.org/law#against" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#Apple" }
+      } ,
+      { 
+        "s": { "type": "bnode" , "value": "b3" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#AllDisjointClasses" }
+      } ,
+      { 
+        "s": { "type": "bnode" , "value": "b3" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#members" } ,
+        "o": { "type": "bnode" , "value": "b2" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#comment" } ,
+        "o": { "type": "literal" , "value": "This class is about the defendents against whom the case has been filed." }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#subClassOf" } ,
+        "o": { "type": "uri" , "value": "http://www.semanticweb.org/law#SummarizableClass" }
+      } ,
+      { 
+        "s": { "type": "uri" , "value": "http://www.semanticweb.org/law#defendant" } ,
+        "p": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "o": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Class" }
+      }
+    ]
+  }
+}
