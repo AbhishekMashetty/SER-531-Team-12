@@ -13,7 +13,7 @@ export class AppComponent {
 
   constructor(private http: HttpClient, private data: DataService) { }
 
-  title = 'test-app';
+  title = 'SER-531-Team-12';
 
   searchText: any;
   outputText: any;
