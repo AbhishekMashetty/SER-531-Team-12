@@ -25,7 +25,10 @@ export class AppComponent {
 
     let query
     if (this.searchText) {
-      query = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT * WHERE{ ?s rdfs:label ?o . FILTER( regex(?o, \"" + this.searchText + "\", \"i\" ) )  }"
+      query = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+        "SELECT ?s ?p ?o WHERE{ ?s rdfs:label ?name . " +
+        "?s ?p ?o" +
+        " FILTER( regex(?name, \"" + this.searchText + "\", \"i\" ) )  }"
     } else {
       query = "SELECT * WHERE{ ?s ?p ?o . }"
     }
@@ -47,13 +50,23 @@ export class AppComponent {
         // if (triple.o.value === 'http://www.w3.org/2002/07/owl#NamedIndividual') {
         //   this.outputText += triple.s.value.split('#')[1] + '\n'
         // }
-
+        let txt: String[] = [];
+        ['s', 'p', 'o'].forEach(x => {
+          if (triple[x].type === 'uri') {
+            txt.push("<" + triple[x].value + ">")
+          } else if (triple[x].type === 'literal') {
+            txt.push("\"" + triple[x].value + "\"")
+          }
+        })
+        this.outputText += txt[0] + ' ' + txt[1] + ' ' + txt[2] + ' .\n'
       })
+
       console.log(inMap)
       console.log(outMap)
-      Object.keys(outMap).forEach(x => {
-        this.outputText += '#' + x.split('#')[1] + ' ' + outMap[x].toString() + '\n'
-      })
+      // Object.keys(outMap).forEach(x => {
+      //   this.outputText += '#' + x.split('#')[1] + ' ' + outMap[x].toString() + '\n'
+      // })
+
     })
 
 
